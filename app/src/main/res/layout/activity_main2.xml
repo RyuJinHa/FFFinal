@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/alarmscreen"
+    tools:context=".AlarmActivity2">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="239dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:text="STOP"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="239dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="270dp"
+        android:text="START"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="620dp"
+        android:background="@color/main"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="38dp"
+            android:fontFamily="@font/nanum_b"
+            android:gravity="center"
+            android:text="소리내세요!"
+            android:textColor="#FFFFFF"
+            android:textSize="21sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="630dp"
+        android:background="@color/main"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:src="@drawable/w_emergency"></ImageView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    //비상탈출요령
+    <LinearLayout
+        android:id="@+id/menu_1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:src="@drawable/baseline_directions_run_black_18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_eb"
+            android:text="재난 발생시 행동요령"
+            android:textSize="17sp"
+            android:paddingLeft="20dp"/>
+    </LinearLayout>
+
+    //알림
+    <LinearLayout
+        android:id="@+id/menu_2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:src= "@drawable/baseline_notification_important_black_18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_eb"
+            android:text="위치 알림"
+            android:textSize="17sp"
+            android:paddingLeft="20dp"/>
+    </LinearLayout>
+
+    // 전화
+    <LinearLayout
+        android:id="@+id/menu_3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:src="@drawable/baseline_local_phone_black_18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_eb"
+            android:text="긴급 전화"
+            android:textSize="17sp"
+            android:paddingLeft="20dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
