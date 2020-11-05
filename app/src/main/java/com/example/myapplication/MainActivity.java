@@ -26,6 +26,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.net.URI;
+
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
 
     LinearLayout layout_1;
@@ -43,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private long backKeyPressedTime = 0;
     private Toast toast;
+    private View view;
+    private AlertDialog.Builder builder;
 
 
     @SuppressLint("WrongViewCast")
@@ -281,8 +285,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         if(marker.getTitle().equals("프라임관"))
         {
-            Intent intent = new Intent(MainActivity.this, PopupActivity.class);
-            startActivity(intent);
+            final String[] words = new String[] {"B2층", "B1층", "1층", "2층", "3층"};
+
+
+                new AlertDialog.Builder(this).setTitle("층수를 선택하세요.").setSingleChoiceItems(words, -1, new DialogInterface.OnClickListener() {
+                    @Override public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(MainActivity.this, "words : " + words[which], Toast.LENGTH_SHORT).show(); } }).setNeutralButton("closed",null).setPositiveButton("OK",null).setNegativeButton("cancel", null).show();
+
+
         }
         return true;
     }

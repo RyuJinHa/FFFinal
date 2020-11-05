@@ -46,8 +46,6 @@
         <!-- 팝업 Activity -->
         <activity android:name=".PopupActivity" android:theme="@android:style/Theme.Dialog" />
 
-
-        출처: https://ghj1001020.tistory.com/9 [혁준 블로그]
     </application>
 
 </manifest>
